@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cool Project</title>
+    <title>Blog Blobber</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <div class="container">
-      <p>Welcome to your life.</p>
+    <div class="{{ currentPage }} container">
+      <div ui-view></div>
     </div>
     <script src="js/bundle.js"></script>
   </body>
