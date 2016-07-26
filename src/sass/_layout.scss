@@ -20,4 +20,11 @@
       margin: 0px 30px;
     }
   }
+  .hero {
+    position: relative;
+  }
+  .is-overlay {
+    @include FLEXED(row, center, center);
+    color: white;
+  }
 }
