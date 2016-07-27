@@ -1,0 +1,19 @@
+.archive-container {
+  ul {
+    li.hidden {
+      display: none;
+      opacity: 0;
+    }
+    li.shown {
+      @include FLEXED(column, center, center);
+      width: 10%;
+      height: 150px;
+      display: block;
+      opacity: 1;
+      margin: 20px auto;
+      span {
+      }
+    }
+
+  }
+}

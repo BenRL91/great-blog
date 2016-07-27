@@ -1,1 +1,10 @@
-<h1 class="title">Hello World!</h1>
+<div class="archive-container">
+  <ul ng-repeat="year in vm.blogs track by $index">
+    <span ng-click="vm.displayBlogs(year)">{{year[$index].created_at.slice(7, 11)}}</span>
+
+     <li ng-class="year.opened ? 'shown' : 'hidden'" ng-repeat="blog in year track by $index">
+       <a href="#" class="title">{{blog.title}}</a>
+       <span class="date">{{blog.created_at}}</span>
+     </li>
+  </ul>
+</div>

@@ -25,6 +25,8 @@
     }
     position: relative;
     span:first-child {
+      color: white;
+      text-shadow: 1px 1px 2px black;
       position: absolute;
       top: 20px;
       left: 20px;
@@ -34,6 +36,8 @@
       position: absolute;
       bottom: 20px;
       right: 20px;
+      color: gray;
+      text-shadow: 1px 1px 2px black;
     }
     p {
       color: white;

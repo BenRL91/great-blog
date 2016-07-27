@@ -33,5 +33,7 @@
   .slogan {
     @include FLEXED(row, center, center);
     color: white;
+    background-color: rgba(7, 36, 48, 0.37);
+    font-size: 6em;
   }
 }
