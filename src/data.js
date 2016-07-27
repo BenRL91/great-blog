@@ -427,6 +427,5 @@ let blogs = [
   }
 ]
 generateDates(blogs);
-generatePics(blogs);
 
 export  { blogs };
