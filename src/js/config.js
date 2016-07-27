@@ -9,11 +9,11 @@ function config($stateProvider, $urlRouterProvider){
      templateUrl: "templates/dashboard.tpl.html",
      controller: "DashboardCtrl as vm"
    })
-  //  .state("root.details", {
-  //    url: "/:id",
-  //    templateUrl: "templates/detail.tpl.html",
-  //    controller: "DetailCtrl"
-  //  })
+   .state("root.archive", {
+     url: "/archive",
+     templateUrl: "templates/archive.tpl.html",
+     controller: "ArchiveCtrl as vm"
+   })
 
    $urlRouterProvider.otherwise("/")
 }

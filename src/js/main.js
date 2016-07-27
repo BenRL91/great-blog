@@ -5,6 +5,7 @@ import "angular-ui-router";
 
 // Import Controllers //
 import { DashboardController } from "./controllers/dashboard.controller";
+import { ArchiveController } from "./controllers/archive.controller";
 // Import Services //
 
 // Import Constants //
@@ -16,3 +17,4 @@ import { config } from "./config";
 angular.module("app", ["ui.router"])
               .config(config)
               .controller("DashboardCtrl", DashboardController)
+              .controller("ArchiveCtrl", ArchiveController)
