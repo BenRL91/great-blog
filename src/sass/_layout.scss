@@ -3,6 +3,8 @@
   header {
     @include FLEXED(row, space-between, center);
     height: 80px;
+    margin: 0px 0px 25px 0px;
+    padding-top: 25px;
 
     img {
       max-height: 100%;
@@ -11,19 +13,24 @@
     nav {
       @include FLEXED(row, space-around, center);
       width: 100%;
-
     }
   }
   .sub-nav {
+    padding: 20px 20px 20px 0px;
     @include FLEXED(row, flex-end, center);
     a {
-      margin: 0px 30px;
+      margin: 0px 3%;
     }
+  }
+  form {
+    display: inline-block;
+    margin-left: 20%;
+    padding: 20px 0px
   }
   .hero {
     position: relative;
   }
-  .is-overlay {
+  .slogan {
     @include FLEXED(row, center, center);
     color: white;
   }

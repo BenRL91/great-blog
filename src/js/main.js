@@ -4,7 +4,7 @@ import "angular-ui-router";
 
 
 // Import Controllers //
-
+import { DashboardController } from "./controllers/dashboard.controller";
 // Import Services //
 
 // Import Constants //
@@ -14,4 +14,5 @@ import { config } from "./config";
 
 // Register Modules //
 angular.module("app", ["ui.router"])
-              .config(config);
+              .config(config)
+              .controller("DashboardCtrl", DashboardController)
