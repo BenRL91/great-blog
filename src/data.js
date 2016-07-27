@@ -20,10 +20,29 @@ function generateDates(blogList){
 function generatePics(blogList){
   for (let i = 0; i < blogList.length; i++){
     blogList[i].preview = picSet[i % picSet.length];
-
  }
 }
+
+function generateViews(blogList){
+  for (let i = 0; i < blogList.length; i++){
+    blogList[i].views = Math.floor(Math.random()*1000)
+  }
+}
+
+function generateComments(blogList){
+  for (let i = 0; i < blogList.length; i++){
+    blogList[i].comments = Math.floor(Math.random()*200)
+  }
+}
+
+function generateShares(blogList){
+  for (let i = 0; i < blogList.length; i++){
+    blogList[i].shares = Math.floor(Math.random()*500)
+  }
+}
+
 let picSet = ["../images/camera.jpg", "../images/campfire.jpeg", "../images/dune_scape.jpeg", "../images/fishing.jpeg", "../images/lake.jpeg", "../images/mountains.jpeg", "../images/night_sky.jpeg", "../images/rust_car.jpeg", "../images/snow_trees.jpeg", "../images/snow.jpeg", "../images/surf.jpeg", "../images/volcano.jpeg" ]
+
 let blogs = [
   {
     title: "My Title",
@@ -411,7 +430,7 @@ let blogs = [
     summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
-    title: "My Title",
+    title: "My Title`",
     preview: "http://fillmurray.com/400/500",
     summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
@@ -426,6 +445,11 @@ let blogs = [
     summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   }
 ]
+
 generateDates(blogs);
+generatePics(blogs);
+generateViews(blogs);
+generateComments(blogs);
+generateShares(blogs);
 
 export  { blogs };
