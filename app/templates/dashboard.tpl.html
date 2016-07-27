@@ -1,5 +1,11 @@
+<div class="hero">
+  <img src="http://placekitten.com/2000/1000" alt="client hero image" />
+  <div class="slogan is-overlay">
+    Slogan here.
+  </div>
+</div>
 <ul>
-  <li ng-repeat="blog in vm.blogs">
+  <li ng-repeat="blog in vm.blogs track by $index">
     <a href="/#/">
       <span>{{ blog.title }}</span>
       <img ng-src="{{ blog.preview}}" alt="preview blog image">
