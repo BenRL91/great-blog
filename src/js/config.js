@@ -6,8 +6,8 @@ function config($stateProvider, $urlRouterProvider){
    })
    .state("root.dashboard", {
      url: "/",
-     templateUrl: "templates/dashboard.tpl.html"
-    //  controller: "DashBoardCtrl"
+     templateUrl: "templates/dashboard.tpl.html",
+     controller: "DashboardCtrl as vm"
    })
   //  .state("root.details", {
   //    url: "/:id",

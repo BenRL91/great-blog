@@ -1,1 +1,12 @@
-<h1>Hello World!</h1>
+<ul>
+  <li ng-repeat="blog in vm.blogs">
+    <a href="/#/">
+      <span>{{ blog.title }}</span>
+      <img ng-src="{{ blog.preview}}" alt="preview blog image">
+      <span class="date">{{ blog.created_at }}</span>
+      <p class="summary">
+        {{ blog.summary }}
+      </p>
+    </a>
+  </li>
+</ul>

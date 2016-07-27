@@ -1,0 +1,46 @@
+.layout-container {
+  li {
+    overflow: hidden;
+    height: 180px;
+    margin: 25px 0px;
+    img {
+      height: 180px;
+      width: 100%;
+    }
+    a {
+      &:hover {
+        color: #1FC8DB;
+        p {
+          position: absolute;
+          top: 20px;
+          width: 85%;
+          right: 1%;
+        }
+      }
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    position: relative;
+    span:first-child {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 2em;
+    }
+    span.date {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
+    p {
+      transition: all .5s linear;
+      position: absolute;
+      top: 20px;
+      width: 85%;
+      right: -85%;
+    }
+  }
+}

@@ -2,6 +2,7 @@
 
 @import "bulma";
 @import "layout";
+@import "dashboard";
 
 * {
   box-sizing: border-box;
@@ -9,4 +10,8 @@
 .container {
   width: 992px;
   margin: 0px auto;
+}
+
+p {
+  margin: 0px;
 }
