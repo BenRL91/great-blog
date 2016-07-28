@@ -1,39 +1,76 @@
 .container {
-
+  background-image: url("../../images/plaid.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 660px;
   header {
     @include FLEXED(row, space-between, center);
     height: 80px;
     margin: 0px 0px 25px 0px;
     padding-top: 25px;
+    padding-left: 25px;
 
     img {
       max-height: 100%;
+      border-radius: 5%;
 
     }
     nav {
       @include FLEXED(row, space-around, center);
       width: 100%;
+      font-weight: bold;
     }
   }
   .sub-nav {
     padding: 20px 20px 20px 0px;
+    background-color: black;
     @include FLEXED(row, flex-end, center);
+    span {
+      color: $link;
+      margin: 0px 3%;
+      &:hover {
+        color: $hoveredLink;
+      }
+    }
     a {
       margin: 0px 3%;
     }
   }
   form {
+    transition: all .4s ease;
+  }
+  form.shown {
     display: inline-block;
-    margin-left: 20%;
-    padding: 20px 0px
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    padding: 15px 0px;
+    background: $link;;
+    width: 100%;
+    span {
+      margin: 0px 3%;
+    }
+    input {
+      padding-left: 10px;
+    }
+  }
+  form.hidden {
+    height: 0;
+    opacity: 0;
+    button, input, span {
+      display: none;
+    }
   }
   .hero {
     position: relative;
   }
   .slogan {
     @include FLEXED(row, center, center);
-    color: white;
+    color: $link;;
     background-color: rgba(7, 36, 48, 0.37);
     font-size: 6em;
+  }
+  footer {
+    color: $link;;
+    padding: 0px 40px 20px;
   }
 }
