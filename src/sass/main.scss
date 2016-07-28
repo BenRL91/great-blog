@@ -12,7 +12,16 @@
   width: 992px;
   margin: 0px auto;
 }
-
+body {
+  background: url(../../images/background.jpg);
+  background-size: 50%;
+}
 p {
   margin: 0px;
+}
+a {
+  color: $link;
+  &:hover {
+   color: $hoveredLink;
+  }
 }

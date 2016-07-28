@@ -4,17 +4,19 @@ import "angular-ui-router";
 
 
 // Import Controllers //
+import { LayoutController } from "./controllers/layout.controller";
 import { DashboardController } from "./controllers/dashboard.controller";
 import { ArchiveController } from "./controllers/archive.controller";
 // Import Services //
 
-// Import Constants //
-
-// Import Config //
-import { config } from "./config";
+// Import Utilities //
+import { config } from "./utilities/config";
+import { blogs } from "./utilities/constants/blogs.constant";
 
 // Register Modules //
 angular.module("app", ["ui.router"])
               .config(config)
+              .controller("LayoutCtrl", LayoutController)
               .controller("DashboardCtrl", DashboardController)
               .controller("ArchiveCtrl", ArchiveController)
+              .constant("blogs", blogs )
