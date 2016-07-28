@@ -41,7 +41,7 @@ function generateShares(blogList){
   }
 }
 
-let picSet = ["../images/wood_1.jpg", "../images/wood_2.jpeg", "../images/wood_3.jpeg", "../images/wood_4.jpeg", "../images/wood_5.jpg", "../images/wood_8.jpeg", "../images/wood_7.jpg", "../images/wood_6.jpeg", "../images/wood_10.jpeg", "../images/wood_9.jpeg", "../images/wood_11.jpeg", "../images/wood_12.jpeg", "../images/campfire.jpeg" ]
+let picSet = ["../images/wood_1.jpeg", "../images/wood_2.jpeg", "../images/wood_3.jpeg", "../images/wood_4.jpeg", "../images/wood_5.jpg", "../images/wood_8.jpeg", "../images/wood_7.jpg", "../images/wood_6.jpeg", "../images/wood_10.jpeg", "../images/wood_9.jpeg", "../images/wood_11.jpeg", "../images/wood_12.jpeg", "../images/campfire.jpeg" ]
 
 let blogs = [
   {
