@@ -58,7 +58,6 @@ function getMostShared(blogOne, blogTwo){
   }
 }
 
-
 PopularController.$inject = ["blogs"];
 
 export { PopularController };

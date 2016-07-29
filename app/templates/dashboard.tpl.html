@@ -11,9 +11,11 @@
         <span class="title">{{ blog.title }}</span>
         <img ng-src="{{ blog.preview}}" alt="preview blog image">
         <span class="date">{{ blog.created_at }}</span>
-        <p class="summary">
-          {{ blog.summary }}
-        </p>
+        <div class="summary-wrapper">
+          <p class="summary">
+            {{ blog.summary }}
+          </p>
+        </div>
       </a>
     </li>
   </ul>
