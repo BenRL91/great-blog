@@ -25,19 +25,19 @@ function generatePics(blogList){
 
 function generateViews(blogList){
   for (let i = 0; i < blogList.length; i++){
-    blogList[i].views = Math.floor(Math.random()*10000)
+    blogList[i].views = Math.floor(Math.random()*100000)
   }
 }
 
 function generateComments(blogList){
   for (let i = 0; i < blogList.length; i++){
-    blogList[i].comments = Math.floor(Math.random()*2000)
+    blogList[i].comments = Math.floor(Math.random()*20000)
   }
 }
 
 function generateShares(blogList){
   for (let i = 0; i < blogList.length; i++){
-    blogList[i].shares = Math.floor(Math.random()*5000)
+    blogList[i].shares = Math.floor(Math.random()*50000)
   }
 }
 
