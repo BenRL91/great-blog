@@ -10,6 +10,7 @@
     padding-left: 25px;
 
     img {
+      border: 3px solid black;
       max-height: 100%;
       border-radius: 5%;
     }
@@ -61,7 +62,8 @@
       width: 35%;
     }
     button {
-      background-color: #FEB648;
+      background-color: black;
+      font-size: 1.3em;
       color: white;
     }
   }
