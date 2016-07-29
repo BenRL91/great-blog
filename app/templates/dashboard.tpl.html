@@ -1,18 +1,20 @@
-<div class="hero">
-  <img src="../images/hero.jpeg" alt="client hero image" />
-  <div class="slogan is-overlay">
-    Share your story.
+<div class="dashboard-container">
+  <div class="hero">
+    <img src="../images/hero.jpeg" alt="client hero image" />
+    <div class="slogan is-overlay">
+      Roll with us.
+    </div>
   </div>
+  <ul>
+    <li ng-repeat="blog in vm.blogs track by $index">
+      <a href="/#/">
+        <span class="title">{{ blog.title }}</span>
+        <img ng-src="{{ blog.preview}}" alt="preview blog image">
+        <span class="date">{{ blog.created_at }}</span>
+        <p class="summary">
+          {{ blog.summary }}
+        </p>
+      </a>
+    </li>
+  </ul>
 </div>
-<ul>
-  <li ng-repeat="blog in vm.blogs track by $index">
-    <a href="/#/">
-      <span>{{ blog.title }}</span>
-      <img ng-src="{{ blog.preview}}" alt="preview blog image">
-      <span class="date">{{ blog.created_at }}</span>
-      <p class="summary">
-        {{ blog.summary }}
-      </p>
-    </a>
-  </li>
-</ul>
