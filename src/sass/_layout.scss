@@ -18,6 +18,12 @@
       width: 100%;
       font-weight: bold;
       font-size: 1.6em;
+      a {
+        color: black;
+        &:hover {
+          color: lighten(black, 20%);
+        }
+      }
     }
   }
   .sub-nav {
