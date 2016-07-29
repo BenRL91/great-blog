@@ -11,8 +11,16 @@
   }
   div.tabs {
     background: white;
+    border-bottom: 2px solid black;
     margin: 0;
     width: 100%;
+    li.is-active {
+      a {
+        border-bottom: black;
+        color: white;
+        background-color: black;
+      }
+    }
   }
   .current-popular {
     width: 100%;

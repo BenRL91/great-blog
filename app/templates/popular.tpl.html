@@ -2,9 +2,15 @@
   <h2 class="title">View the top trending blogs!</h2>
   <div class="tabs is-centered">
     <ul>
-      <li><a ng-click="vm.showMostViewed()">Most Viewed</a></li>
-      <li><a ng-click="vm.showMostCommented()">Most Commented</a></li>
-      <li><a ng-click="vm.showMostShared()">Most Shared</a></li>
+      <li ng-class="vm.currentPopularAttr === 'views' ? 'is-active' : ''">
+        <a ng-click="vm.showMostViewed()">Most Viewed</a>
+      </li>
+      <li ng-class="vm.currentPopularAttr === 'comments' ? 'is-active' : ''">
+        <a ng-click="vm.showMostCommented()">Most Commented</a>
+      </li>
+      <li ng-class="vm.currentPopularAttr === 'shares' ? 'is-active' : ''">
+        <a ng-click="vm.showMostShared()">Most Shared</a>
+      </li>
     </ul>
   </div>
   <ul class="current-popular">
