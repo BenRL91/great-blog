@@ -1,30 +1,29 @@
-.layout-container {
+.dashboard-container {
+  background-color: lighten(black, 10%);
   li {
+    position: relative;
     overflow: hidden;
     height: 180px;
     margin: 25px 0px;
-    img {
-      height: 180px;
-      width: 100%;
-    }
     a {
-      &:hover {
-        p {
-          position: absolute;
-          top: 20px;
-          width: 85%;
-          right: 1%;
-        }
-      }
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
+      &:hover {
+        p {
+          position: absolute;
+          top: 0px;
+          width: 85%;
+          right: 0;
+        }
+      }
+
     }
-    position: relative;
     span:first-child {
       color: white;
+      width: 15%;
       text-shadow: 1px 1px 2px black;
       position: absolute;
       top: 20px;
@@ -33,8 +32,9 @@
     }
     span.date {
       position: absolute;
-      bottom: 20px;
+      bottom: 30px;
       right: 20px;
+      z-index: 999;
       color: gray;
       text-shadow: 1px 1px 2px black;
     }
@@ -44,9 +44,15 @@
       text-shadow: 1px 1px 2px black;
       transition: all .2s linear;
       position: absolute;
-      top: 20px;
+      top: 0px;
       width: 85%;
       right: -85%;
+      background: url("../../images/saw.png");
+      height: 100%;
+      background-position-y: -380px;
+      background-size: 200%;
+      padding-top: 10px;
+      padding-left: 10%;
     }
   }
 }

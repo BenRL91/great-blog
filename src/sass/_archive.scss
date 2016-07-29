@@ -1,16 +1,37 @@
 .archive-container {
+  background: white;
   ul {
+    @include FLEXED(column, center, center);
+    background: white;
+    span.created-at{
+      height: 50px;
+      font-size: 1.7em;
+      text-decoration: underline;
+      &:hover {
+        color: black;
+      }
+    }
     li.hidden {
       display: none;
       opacity: 0;
     }
     li.shown {
       @include FLEXED(column, center, center);
-      width: 10%;
-      height: 150px;
+      // width: 50%;
+      // height: 30px;
       display: block;
       opacity: 1;
-      margin: 20px auto;
+      margin: 5px auto;
+      a{
+        font-size: 1.5em;
+        color: black;
+        margin-right: 15px;
+        text-decoration: underline;
+        &:hover {
+          color: lighten(black, 20%);
+
+        }
+      }
     }
   }
 }
