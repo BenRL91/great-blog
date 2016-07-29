@@ -31,7 +31,7 @@
       span {
         margin-right: 25%;
         text-decoration: underline;
-        padding: 25px 0px;
+        padding: 15px 0px;
       }
       span:first-child {
         margin-left: 25%;
@@ -40,11 +40,28 @@
     }
     li.popular-list-item {
       @include FLEXED(row, space-between, center);
+      padding: 5px 10px;
       width: 50%;
       margin: 0px auto;
       position: relative;
-      padding-bottom: 20px;
+      border: 2px solid black;
+      &:nth-child(2n){
+        background-color: black;
+        a {
+          color: white;
+          &:hover {
+            color: lighten(black, 60%);
+          }
+        }
+        span {
+          color: white;
+        }
+        .rank {
+          color: #949494;
+        }
+      }
       &:last-child {
+        margin-bottom: 35px;
         .rank {
           left: -8%;
         }
@@ -55,7 +72,7 @@
         font-size: 1.7em;
 
         &:hover {
-          color: lighten(black, 20%);
+          color: lighten(black, 60%);
         }
       }
       .popular-attribute {
@@ -67,6 +84,7 @@
         position: absolute;
         left: -6%;
         font-size: 1.3em;
+        color: #949494;
       }
     }
   }

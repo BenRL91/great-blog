@@ -2,7 +2,7 @@ import moment from "moment";
 
 function generateDates(blogList){
   for (let i = 0; i < blogList.length; i++){
-    let randomMonth = Math.floor(Math.random()* (new Date().getMonth() + 1));
+    let randomMonth = Math.floor(Math.random()* 13);
     let randomDay   = Math.floor(Math.random()*29);
     let randomYear  = Math.floor(1989 +  Math.random()* 28);
 
