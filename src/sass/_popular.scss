@@ -1,0 +1,57 @@
+.popular-container {
+  @include FLEXED(column, center, center);
+  text-transform: capitalize;
+  h2 {
+    margin: 20px 0;
+  }
+  div.tabs {
+    // background: blue;
+    margin: 0;
+    width: 100%;
+  }
+  .current-popular {
+    width: 100%;
+    background-color: white;
+    .label-container {
+      @include FLEXED(row, space-between, center);
+      font-size: 2em;
+      span {
+        margin-right: 25%;
+        text-decoration: underline;
+      }
+      span:first-child {
+        margin-left: 25%;
+      }
+    }
+    li.popular-list-item {
+      @include FLEXED(row, space-between, center);
+      width: 50%;
+      margin: 0px auto;
+      position: relative;
+      &:last-child {
+        .rank {
+          left: -8%;
+        }
+      }
+      a {
+        display: block;
+        color: black;
+        font-size: 1.7em;
+
+        &:hover {
+          color: lighten(black, 20%);
+        }
+      }
+      .popular-attribute {
+        display: block;
+        color: black;
+        font-size: 1.4em;
+      }
+      .rank {
+        position: absolute;
+        left: -6%;
+        font-size: 1.3em;
+      }
+    }
+  }
+}

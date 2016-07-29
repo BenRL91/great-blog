@@ -1,6 +1,5 @@
 function LayoutController(){
   let vm = this;
-  console.log("hey1")
 
   init();
 
