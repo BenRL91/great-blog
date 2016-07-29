@@ -5,21 +5,33 @@ import _ from "lodash";
 function PopularController(blogs){
   let vm = this;
 vm.showMostViewed = () => {
-   let sortedBlogs = blogs.sort(getMostViewed);
-   vm.currentPopular = sortedBlogs.slice(0,10);
-   vm.currentPopularAttr = "views"
+   if (vm.currentPopularAttr === "views"){
+     return;
+   }else {
+     let sortedBlogs = blogs.sort(getMostViewed);
+     vm.currentPopular = sortedBlogs.slice(0,10);
+     vm.currentPopularAttr = "views"
+   }
 
 }
 vm.showMostCommented= () => {
+  if (vm.currentPopularAttr === "comments"){
+    return;
+  }else {
   let sortedBlogs = blogs.sort(getMostCommented);
   vm.currentPopular = sortedBlogs.slice(0,10);
   vm.currentPopularAttr = "comments"
+  }
 
 }
 vm.showMostShared = () => {
+  if (vm.currentPopularAttr === "shares"){
+    return;
+  }else {
   let sortedBlogs = blogs.sort(getMostShared);
   vm.currentPopular = sortedBlogs.slice(0,10);
   vm.currentPopularAttr = "shares"
+  }
 
 }
   init();

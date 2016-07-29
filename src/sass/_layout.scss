@@ -35,6 +35,7 @@
     span {
       color: $link;
       margin: 0px 3%;
+      cursor: pointer;
       &:hover {
         color: $hoveredLink;
       }

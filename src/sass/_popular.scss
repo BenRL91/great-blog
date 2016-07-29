@@ -5,7 +5,7 @@
     margin: 20px 0;
   }
   div.tabs {
-    // background: blue;
+    background: white;
     margin: 0;
     width: 100%;
   }
@@ -18,9 +18,11 @@
       span {
         margin-right: 25%;
         text-decoration: underline;
+        padding: 25px 0px;
       }
       span:first-child {
         margin-left: 25%;
+
       }
     }
     li.popular-list-item {
@@ -28,6 +30,7 @@
       width: 50%;
       margin: 0px auto;
       position: relative;
+      padding-bottom: 20px;
       &:last-child {
         .rank {
           left: -8%;
