@@ -18,7 +18,7 @@ function config($stateProvider, $urlRouterProvider){
    .state("root.popular", {
      url: "/popular",
      templateUrl: "templates/popular.tpl.html",
-    //  controller: "PopularCtrl as vm"
+     controller: "PopularCtrl as vm"
    })
 
    $urlRouterProvider.otherwise("/")

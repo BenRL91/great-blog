@@ -7,6 +7,7 @@ import "angular-ui-router";
 import { LayoutController } from "./controllers/layout.controller";
 import { DashboardController } from "./controllers/dashboard.controller";
 import { ArchiveController } from "./controllers/archive.controller";
+import { PopularController } from "./controllers/popular.controller";
 // Import Services //
 
 // Import Utilities //
@@ -19,4 +20,5 @@ angular.module("app", ["ui.router"])
               .controller("LayoutCtrl", LayoutController)
               .controller("DashboardCtrl", DashboardController)
               .controller("ArchiveCtrl", ArchiveController)
+              .controller("PopularCtrl", PopularController)
               .constant("blogs", blogs )

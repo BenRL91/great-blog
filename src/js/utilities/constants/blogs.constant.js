@@ -49,7 +49,7 @@ function generateTitles(blogList){
 
 let picSet = ["../images/wood_1.jpeg", "../images/wood_2.jpeg", "../images/wood_3.jpeg", "../images/wood_4.jpeg", "../images/wood_5.jpg", "../images/wood_8.jpeg", "../images/wood_7.jpg", "../images/wood_6.jpeg", "../images/wood_10.jpeg", "../images/wood_9.jpeg", "../images/wood_11.jpeg", "../images/wood_12.jpeg", "../images/campfire.jpeg" ]
 
-let titleSet = ["My Title", "My Long Title", "My Even Longer Title", "My Super Long Title", "My Super Duper Long Title"];
+let titleSet = ["My Title", "My Long Title", "My Even Longer Title", "My Super Duper Long Title", "My Longest Title Ever Created In History"];
 
 let blogs = [
   {

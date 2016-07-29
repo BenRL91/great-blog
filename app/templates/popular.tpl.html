@@ -1,3 +1,22 @@
 <div class="popular-container">
-  {{ 5 + 5}}  
+  <h2 class="title">View the top trending blogs from our bloggers!</h2>
+  <div class="tabs is-centered">
+    <ul>
+      <li><a ng-click="vm.showMostViewed()">Most Viewed</a></li>
+      <li><a ng-click="vm.showMostCommented()">Most Commented</a></li>
+      <li><a ng-click="vm.showMostShared()">Most Shared</a></li>
+    </ul>
+  </div>
+  <ul class="current-popular">
+    <li class="label-container">
+      <span>Title</span>
+      <span>{{ vm.currentPopularAttr }}</span>
+    </li>
+
+    <li class="popular-list-item" ng-repeat="blog in vm.currentPopular track by $index">
+        <a href="/#/" class="popular-title">{{ blog.title}}</a>
+        <span class="popular-attribute">{{ blog[vm.currentPopularAttr]}}</span>
+        <span class="rank">{{ $index + 1 }}.</span>
+    </li>
+  </ul>
 </div>
