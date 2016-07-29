@@ -12,6 +12,13 @@ function ArchiveController(blogs){
    year.opened   = !year.opened;
  }
 
+ vm.showYear = (year) => {
+   vm.currentYear = year
+   vm.currentBlogs = vm.blogs.filter(function(blog){
+      return blog[0].created_at.slice(7, 11) === year;
+   })
+   vm.currentBlogs = vm.currentBlogs[0];
+ }
  function init(){
 
    let sortedBlogs = sortDates(blogs);
@@ -20,7 +27,8 @@ function ArchiveController(blogs){
    })
     orderedBlogs = orderedBlogs.sort(compareOrderedBlogDates)
     vm.blogs = orderedBlogs;
-    console.log(orderedBlogs)
+    vm.currentYear = "";
+    // console.log(orderedBlogs)
   }
 //Returns an array containing one array for each of the different years blogs were created//
   function sortDates(blogList){

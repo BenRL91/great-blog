@@ -1,5 +1,5 @@
 <header>
-<img src="../images/logo.jpg" alt="client logo" />
+<img src="../images/logo.jpg" alt="client-logo" />
   <nav class="is-inline-block header-nav">
     <a href="#">Lorem</a>
     <a href="#">Ipsum</a>
@@ -8,17 +8,17 @@
     <a href="#">Amet</a>
   </nav>
 </header>
-<form ng-class="vm.shown ? 'shown' : 'hidden'">
-  <span>Join our newsletter to stay up to date with your favorite bloggers!</span>
-  <input type="email" name="email" placeholder="Enter your email...">
-  <button type="submit">Join!</button>
-</form>
 <nav class="sub-nav">
   <a href="/#/">Dashboard</a>
   <span ng-click="vm.toggleNewsLetter(vm.shown)">Newsletter</span>
   <a href="/#/archive">Archive</a>
   <a href="/#/popular">Popular</a>
 </nav>
+<form ng-class="vm.shown ? 'shown' : 'hidden'">
+  <span>Join our newsletter to stay up to date with your favorite bloggers!</span>
+  <input type="email" name="email" placeholder="Enter your email...">
+  <button  class="button" type="submit">Join!</button>
+</form>
   <div class="layout-container" ui-view></div>
 <footer>
   &copy 2016 Blog Rolling

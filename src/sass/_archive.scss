@@ -1,35 +1,48 @@
 .archive-container {
   background: white;
-  ul {
-    @include FLEXED(column, center, center);
-    background: white;
-    span.created-at{
-      height: 50px;
-      font-size: 1.7em;
-      text-decoration: underline;
-      &:hover {
-        color: black;
-      }
+  min-height: 100vh;
+  @include FLEXED(column, flex-start, center);
+  .year-container {
+    @include FLEXED(row, space-between, center);
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  h2 {
+    width: 100%;
+    text-align: center;
+    margin: 2vw 0px;
+
+  }
+  span.created-at{
+    height: 50px;
+    font-size: 1.2em;
+    margin: 0px 10px;
+    text-decoration: underline;
+    &:hover {
+      color: black;
     }
-    li.hidden {
-      display: none;
-      opacity: 0;
-    }
-    li.shown {
-      @include FLEXED(column, center, center);
-      // width: 50%;
-      // height: 30px;
-      display: block;
-      opacity: 1;
-      margin: 5px auto;
-      a{
+  }
+  .current-year {
+    width: 100%;
+    padding: 10px 0px;
+    li {
+      width: 23%;
+      padding: 0 2%;
+      display: inline-block;
+      span{
         font-size: 1.5em;
         color: black;
         margin-right: 15px;
+        margin-top: 10px;
         text-decoration: underline;
+        &.date {
+          font-size: 1.2em;
+          color: black;
+          text-decoration: none;
+
+        }
         &:hover {
           color: lighten(black, 20%);
-
         }
       }
     }

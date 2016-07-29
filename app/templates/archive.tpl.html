@@ -1,12 +1,18 @@
 <div class="archive-container">
-  <ul ng-repeat="year in vm.blogs track by $index">
-    <span class="created-at" ng-click="vm.displayBlogs(year)">{{year[$index].created_at.slice(7, 11)}}</span>
+  <h2 class="title">Viewing blogs from: {{ vm.currentYear ? vm.currentYear : "Choose A Year" }} </h2>
+  <div class="year-container">
+    <div class="year" ng-repeat="year in vm.blogs track by $index">
 
-     <li ng-class="year.opened ? 'shown' : 'hidden'" ng-repeat="blog in year track by $index">
-       <div>
-         <a href="#" class="my-title">{{blog.title}}</a>
-         <span class="date">{{blog.created_at}}</span>
-     </div>
+      <span class="created-at"
+      ng-click="vm.showYear(year[0].created_at.slice(7, 11))">
+      {{year[0].created_at.slice(7, 11)}}
+    </span>
+  </div>
+  </div>
+   <ul class="current-year">
+     <li ng-repeat="blog in vm.currentBlogs track by $index">
+       <span>{{ blog.title }}</span>
+       <span class="date">{{ blog.created_at.slice(0,6) }}</span>
      </li>
-  </ul>
+   </ul>
 </div>

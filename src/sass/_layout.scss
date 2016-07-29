@@ -1,5 +1,5 @@
 .container {
-  background-image: url("../../images/plaid.jpg");
+  background-image: url("../../images/hero.jpeg");
   background-repeat: no-repeat;
   background-size: 100% 660px;
   header {
@@ -12,7 +12,6 @@
     img {
       max-height: 100%;
       border-radius: 5%;
-
     }
     nav {
       @include FLEXED(row, space-around, center);
@@ -22,9 +21,10 @@
     }
   }
   .sub-nav {
+    @include FLEXED(row, flex-end, center);
     padding: 20px 20px 20px 0px;
     background-color: black;
-    @include FLEXED(row, flex-end, center);
+    font-size: 1.2em;
     span {
       color: $link;
       margin: 0px 3%;
@@ -40,18 +40,23 @@
     transition: all .4s ease;
   }
   form.shown {
-    display: inline-block;
-    display: flex;
-    justify-content: center;
+    // display: inline-block;
+    @include FLEXED(row, center, center);
     margin: 0px auto;
     padding: 15px 0px;
-    background: $link;;
+    // background: $link;
     width: 100%;
     span {
       margin: 0px 3%;
     }
     input {
       padding-left: 10px;
+      margin-right: 2px;
+      width: 35%;
+    }
+    button {
+      background-color: #FEB648;
+      color: white;
     }
   }
   form.hidden {
@@ -67,7 +72,7 @@
   .slogan {
     @include FLEXED(row, center, center);
     color: $link;;
-    background-color: rgba(7, 36, 48, 0.37);
+    // background-color: rgba(7, 36, 48, 0.37);
     font-size: 6em;
   }
   footer {
