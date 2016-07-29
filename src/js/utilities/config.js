@@ -15,6 +15,11 @@ function config($stateProvider, $urlRouterProvider){
      templateUrl: "templates/archive.tpl.html",
      controller: "ArchiveCtrl as vm"
    })
+   .state("root.popular", {
+     url: "/popular",
+     templateUrl: "templates/popular.tpl.html",
+    //  controller: "PopularCtrl as vm"
+   })
 
    $urlRouterProvider.otherwise("/")
 }

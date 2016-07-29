@@ -11,7 +11,7 @@
   </div>
    <ul class="current-year">
      <li ng-repeat="blog in vm.currentBlogs track by $index">
-       <span>{{ blog.title }}</span>
+       <span class="blog-title">{{ blog.title }}</span>
        <span class="date">{{ blog.created_at.slice(0,6) }}</span>
      </li>
    </ul>

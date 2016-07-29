@@ -5,6 +5,9 @@
     overflow: hidden;
     height: 180px;
     margin: 25px 0px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
     a {
       position: absolute;
       top: 0;
@@ -14,8 +17,8 @@
       &:hover {
         p {
           position: absolute;
-          top: 0px;
-          width: 85%;
+          top: 30px;
+          width: 100%;
           right: 0;
         }
       }
@@ -23,12 +26,14 @@
     }
     span:first-child {
       color: white;
-      width: 15%;
-      text-shadow: 1px 1px 2px black;
+      width: 100%;
+      background-color: black;
+      height: 30px;
       position: absolute;
-      top: 20px;
-      left: 20px;
+      top: 0px;
+      left: 0px;
       font-size: 2em;
+      padding-left: 10px;
     }
     span.date {
       position: absolute;
@@ -42,16 +47,16 @@
       color: white;
       font-size: 1.2em;
       text-shadow: 1px 1px 2px black;
-      transition: all .2s linear;
+      transition: all .4s ease-in-out;
       position: absolute;
-      top: 0px;
+      top: 30px;
       width: 85%;
-      right: -85%;
+      right: -100%;
       background: url("../../images/saw.png");
       background-color: black;
       height: 100%;
-      background-position-y: -380px;
-      background-size: 200%;
+      background-position-y: -318px;
+      background-size: 145%;
       padding-top: 10px;
       padding-left: 10%;
     }
