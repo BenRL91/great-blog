@@ -2,6 +2,8 @@
 import moment from "moment";
 import _ from "lodash";
 
+/*TODO Consolidate get attribute and show attribute functions? */
+
 function PopularController(blogs){
   let vm = this;
 vm.showMostViewed = () => {
@@ -42,6 +44,7 @@ vm.showMostShared = () => {
 
 }
 
+
 function getMostCommented(blogOne, blogTwo){
   if (blogOne.comments > blogTwo.comments){
     return -1;
@@ -51,6 +54,7 @@ function getMostCommented(blogOne, blogTwo){
     return 0;
   }
 }
+
 function getMostViewed(blogOne, blogTwo){
   if (blogOne.views > blogTwo.views){
     return -1;
@@ -60,6 +64,7 @@ function getMostViewed(blogOne, blogTwo){
     return 0;
   }
 }
+
 function getMostShared(blogOne, blogTwo){
   if (blogOne.shares > blogTwo.shares){
     return -1;

@@ -25,19 +25,19 @@ function generatePics(blogList){
 
 function generateViews(blogList){
   for (let i = 0; i < blogList.length; i++){
-    blogList[i].views = Math.floor(Math.random()*1000)
+    blogList[i].views = Math.floor(Math.random()*10000)
   }
 }
 
 function generateComments(blogList){
   for (let i = 0; i < blogList.length; i++){
-    blogList[i].comments = Math.floor(Math.random()*200)
+    blogList[i].comments = Math.floor(Math.random()*2000)
   }
 }
 
 function generateShares(blogList){
   for (let i = 0; i < blogList.length; i++){
-    blogList[i].shares = Math.floor(Math.random()*500)
+    blogList[i].shares = Math.floor(Math.random()*5000)
   }
 }
 
@@ -59,9 +59,12 @@ let titleSet = ["My Title", "My Long Title", "My Even Longer Title", "My Super D
 let summarySet = ["Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit eur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "Lorem ipsum dolor proident, sunt in culpa qui officia deserunt mollit anim id est laborum." ];
 
 let blogs = [];
-for (let i = 0; i < 500; i++){
+for (let i = 0; i < 1000; i++){
   blogs.push({});
 }
+
+
+/* Generates dummy data every page load to ensure dynamic data support */
 
 generateDates(blogs);
 generatePics(blogs);
