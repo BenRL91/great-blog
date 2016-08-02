@@ -41,6 +41,8 @@
         color: black;
         margin-top: 10px;
         text-decoration: underline;
+        cursor: pointer;
+        background: white;
         &:hover {
           color: lighten(black, 20%);
         }
